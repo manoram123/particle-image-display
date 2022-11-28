@@ -1,0 +1,111 @@
+:root {
+  /* Light Theme */
+  --secondary: hwb(0 57% 43%);
+  --light: #f0f0f0;
+  --dark: #6a6a6a;
+
+  --primary: #3576f0;
+  --danger: #f24141;
+  --success: #06c909;
+  --warning: #fff23b;
+  --info: #35cdf0;
+  --muted: #d6d6d6;
+  --muted-dark: #616161;
+
+  --primary-shadow: #4d3dff;
+}
+
+* {
+  font-family: poppins;
+}
+
+body {
+  transition: background 0.3s linear;
+}
+
+.light {
+  background: var(--light);
+  color: var(--dark);
+}
+
+.light .link{
+  color: var(--secondary);
+  text-decoration: none;
+
+}
+
+.light .footer{
+  border-top: 1px solid #c9c9c9;
+}
+.dark .footer{
+  border-top: 1px solid #616161;
+}
+.light .header{
+  border-bottom: 1px solid #c9c9c9;
+}
+.dark .header{
+  border-bottom: 1px solid #616161;
+}
+
+
+.light .hover:hover {
+  background: var(--muted);
+}
+
+.dark {
+  background: #404040;
+  color: var(--light);
+}
+
+.dark .link{
+  color: var(--light);
+  text-decoration: none;
+}
+
+.dark .hover:hover {
+  background: var(--muted-dark);
+}
+
+.btn {
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: #4d3dff !important;
+  box-shadow: 10px 0 20px -15px var(--primary-shadow);
+}
+
+.hover {
+  transition: 0.3s all;
+}
+
+
+#particle-image {
+  /* background: var(--primary); */
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.sample-image {
+  background: #eaeaea;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sample-image:hover {
+  background-color: #d6d6d6;
+}
+
+.sample-image:focus {
+  background: #bababa;
+}
